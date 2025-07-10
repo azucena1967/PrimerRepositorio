@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario y Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulario de Contacto</h1>
+    <form id="contactForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+    <button onclick="redirectToSite()">Ir a Zajuna</button>
+
+    <hr>
+
+    <h2>Calculadora Simple</h2>
+    <div class="calculator">
+        <input type="number" id="num1" placeholder="Número 1">
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="-">−</option>
+            <option value="*">×</option>
+            <option value="/">÷</option>
+        </select>
+        <input type="number" id="num2" placeholder="Número 2">
+        <button onclick="calculate()">Calcular</button>
+        <input type="text" id="result" placeholder="Resultado" readonly>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
